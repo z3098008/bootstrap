@@ -1,0 +1,70 @@
+<script type="text/javascript">
+    $(function(){
+        $('#repwdForm').bootstrapValidator({
+    //        live: 'disabled',
+            message: '值无效',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                oldPwd: {
+                    validators: {
+                        notEmpty: {
+                            message: '原始密码不能为空'
+                        },
+                        stringLength: {
+                            min: 6,
+                            max: 30,
+                            message: '密码长度必须大于6并且小于30'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_]+$/,
+                            message: '密码必须是数字和字母'
+                        }
+                    }
+                },
+                newPwd: {
+                    validators: {
+                        notEmpty: {
+                            message: '新密码不能为空'
+                        }
+                    }
+                },
+                confirmPwd: {
+                    validators: {
+                        notEmpty: {
+                            message: '确认密码不能为空'
+                        }
+                    }
+                }
+            }
+        });
+    })
+</script>
+<div class="modal-header">
+    <!-- data-dismiss="modal"实现关闭功能 -->
+    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+    <h4 class="modal-title" id="modal_title">修改口令</h4>
+</div>
+<div class="modal-body">
+    <form id="repwdForm">
+        <div class="form-group">
+            <label for="oldPwd">原始密码</label>
+            <input type="password" name="oldPwd" id="oldPwd" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="newPwd">新密码</label>
+            <input type="password" name="newPwd" id="newPwd" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label for="confirmPwd">确认密码</label>
+            <input type="password" name="confirmPwd" id="confirmPwd" class="form-control"/>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">关闭(ESC)</button>
+    <button type="button" class="btn btn-primary" onclick="$('#repwdForm').submit()">修改</button>
+</div>
