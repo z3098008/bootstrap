@@ -1,7 +1,7 @@
 # bootstrap练手
 * 下载bootstrap-datetimepicker (来自bootstrap官网)
-        <link href="./bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />`
-        <script src="./bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript" ></script>`
+        <link href="./bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+        <script src="./bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript" ></script>
 * 下载bootstrapvalidator (来自github)
         <link type="text/css" href="./bootstrapvalidator-0.4.5/dist/css/bootstrapValidator.min.css" />
         <script src="./bootstrapvalidator-0.4.5/dist/js/bootstrapValidator.min.js" type="text/javascript"></script>
