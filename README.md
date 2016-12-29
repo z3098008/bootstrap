@@ -29,5 +29,4 @@
   &lt;![endif]--&gt;`</code></pre>
 </li>
 </ul>
-<p>Edit By <a href="http://mahua.jser.me">MaHua</a></p>
 </body></html>
